@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maze Runner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #e3dede;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    canvas {
+      display: block;
+    }
+
+    #winModal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+
+    #modalContent {
+      background: #fff;
+      padding: 2.5rem 3.5rem;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+      animation: pop-in 0.3s ease-out;
+    }
+
+    @keyframes pop-in {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    #modalContent h2 {
+      margin-bottom: 1.8rem;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .modal-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+    }
+
+    .modal-buttons button {
+      padding: 0.6rem 1.4rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .play-again-btn {
+      background-color: #4caf50;
+      color: white;
+    }
+
+    .play-again-btn:hover {
+      background-color: #45a049;
+    }
+
+    .close-btn {
+      background-color: #f44336;
+      color: white;
+    }
+
+    .close-btn:hover {
+      background-color: #e53935;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="winModal">
+    <div id="modalContent">
+      <h2>You reached the finish line!</h2>
+      <div class="modal-buttons">
+        <button class="play-again-btn" onclick="restartGame()">Play Again</button>
+        <button class="close-btn" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <script src="p5.play.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
