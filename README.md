@@ -19,5 +19,5 @@ A top-down maze navigation game created using **p5.js** and **p5.play**. Guide t
 
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/yourusername/maze-runner-game.git
+   git clone https://github.com/ionkarsingh/Maze-Runner-Using-p5.play.js
    cd maze-runner-game
