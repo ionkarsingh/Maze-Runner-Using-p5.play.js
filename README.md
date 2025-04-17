@@ -4,20 +4,23 @@ A top-down maze navigation game created using **p5.js** and **p5.play**. Guide t
 
 ## 🔍 Features
 
-- Smooth player movement with arrow keys
-- Maze layout loaded from a `.txt` file
-- Real-time collision detection with walls
-- Finish line modal with "Restart" option
+- Smooth player movement with arrow keys  
+- Maze layout loaded from a `.txt` file  
+- Real-time collision detection with walls  
+- Finish line modal with "Restart" option  
 
 ## 🕹️ How to Play
 
-- Use **arrow keys** to move the player.
-- Reach the **finish tile** to win the game.
-- A pop-up will appear; click **Restart** to try again.
+- Use **arrow keys** to move the player.  
+- Reach the **finish tile** to win the game.  
+- A pop-up will appear; click **Restart** to try again.  
 
 ## 🚀 How to Run Locally
 
-1. Clone or download the repository:
+1. Clone or download the repository:  
+   👉 [GitHub Repo - Maze Runner](https://github.com/ionkarsingh/Maze-Runner-Using-p5.play.js)
+
+   Or use the command line:
    ```bash
    git clone https://github.com/ionkarsingh/Maze-Runner-Using-p5.play.js
-   cd maze-runner-game
+   cd Maze-Runner-Using-p5.play.js
